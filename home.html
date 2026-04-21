@@ -7,7 +7,13 @@
 </head>
 <body>
     <header>
-        <img src="resources/logo-videobelajar.png" alt="videobelajar welcome logo">
+        <div class="header-left">
+            <img src="resources/logo-videobelajar.png" alt="videobelajar welcome logo">
+            <a href="#">Kategori</a>
+        </div>
+        <div class="header-right">
+            <img src="resources/profile1.png" alt="profile logo">
+        </div>
     </header>
 
     <main>
@@ -248,8 +254,10 @@
                         </div>
                     </div>
 
-                    <input class="email-subscribe" placeholder="Masukkan Emailmu"> 
-                    <button class="subscribe-button">Subscribe</button>
+                    <form action="#" method="POST" class="newsletter-form">
+                        <input type="email" name="email" class="email-subscribe" placeholder="Masukkan Emailmu"> 
+                        <button class="subscribe-button">Subscribe</button>
+                    </form>
                 </div>
             </div>
 
@@ -257,7 +265,59 @@
     </main>
 
     <footer>
-        
+        <div class="upper-footer">
+            <div class="upper-left-footer">
+                <div class="footer-logo">
+                    <img src="resources/logo-videobelajar.png" alt="videobelajar logo">
+                </div>
+                <div class="footer-description">
+                    <div class="gali-potensi"><p>Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!</p></div>
+                    <div class="address">
+                        <p>Jl. Usman Effendi No. 50 Lowokwaru, Malang</p></div>
+                    <div class="phone">
+                        <p>+62-877-7123-1234</p></div>
+                </div>
+            </div>
+            
+
+            <div class="upper-right-footer">
+                <div class="left-row">
+                    <div class="row1-first-item"><a href="#">Kategori</a></div>
+                    <div class="row1-item"><a href="#">Digital & Teknologi</a></div>
+                    <div class="row1-item"><a href="#">Pemasaran</a></div>
+                    <div class="row1-item"><a href="#">Manajemen Bisnis</a></div>
+                    <div class="row1-item"><a href="#">Pengembangan Diri</a></div>
+                    <div class="row1-item"><a href="#">Desain</a></div>
+                </div>
+
+                <div class="middle-row">
+                    <div class="row2-first-item"><a href="#">Perusahaan</a> </div>
+                    <div class="row2-item"><a href="#">Tentang Kami</a></div>
+                    <div class="row2-item"><a href="#">FAQ</a></div>
+                    <div class="row2-item"><a href="#">Kebijakan Privasi</a></div>
+                    <div class="row2-item"><a href="#">Ketentuan Layanan</a></div>
+                    <div class="row2-item"><a href="#">Bantuan</a></div>
+                </div>
+
+                <div class="right-row">
+                    <div class="row3-first-item"><a href="#">Komunitas</a></div>
+                    <div class="row3-item"><a href="#">Tim Sukses</a></div>
+                    <div class="row3-item"><a href="#">Blog</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-footer"></div>
+
+        <div class="lower-footer">
+            <p class="copyright">@2023 Gerobak Sayur All Rights Reserved.</p>
+            <div class="social-media">
+                <img src="resources/linkedin.png" alt="linkedin">
+                <img src="resources/facebook.png" alt="facebook">
+                <img src="resources/instagram.png" alt="instagram">
+                <img src="resources/twitter.png" alt="twitter">
+            </div>
+        </div>
     </footer>
 </body>
 </html>

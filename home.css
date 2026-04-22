@@ -53,6 +53,12 @@ header {
     margin-right: 20px;
 }
 
+.menu-pop {
+    display: none;
+    width: 20px;
+    height: 12px;
+}
+
 .header-right {
     display: flex;
     flex-direction: row;
@@ -60,7 +66,7 @@ header {
     gap: 20px;
 }
 
-.header-left img {
+img.videobelajar-logo {
     width: 15cqw;
     height: auto;
 }
@@ -147,13 +153,34 @@ button {
     background-color: green;
 }
 
+.collection-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.explore-yuk {
+    color: #333333AD;
+}
+
 .menu-bar {
     display: flex;
     gap: 20px;
+    color: #333333AD;
     overflow-x: auto;
     white-space: nowrap;
     padding: 10px 0px;
-    margin: 30px 0px;
+    margin: 20px 0px;
+}
+
+.menu-bar-slider {
+    width: 5%;
+    height: 5px;
+    background-color: red;
+    position: relative;
+    border-radius: 10px;
+    bottom: 35px;
 }
 
 .item {
@@ -410,7 +437,7 @@ footer {
 }
 
 .upper-left-footer img {
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 
@@ -445,6 +472,10 @@ footer {
     margin-bottom: 2px;
 }
 
+.row3-first-item img, .row2-first-item img, .row1-first-item img {
+        display: none;
+    }
+
 .middle-footer {
     width: 100%;
     padding-top: 32px;
@@ -459,29 +490,21 @@ footer {
     justify-content: space-between;
 }
 
-@media (max-width: 650px) {
-    .header-left img {
-        width: 50vw;
-    }
-}
-
-@media (max-width: 650px) {
-    .hero-words {
-        width: 70%;
-    }
-}
-
 @media (max-width: 1200px) {
     .banner-button {
         width: 50%;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .newsletter-content {
+        width: 80%;
         padding: 7px 2px;
         font-size: 12px;
     }
-}
 
-@media (max-width: 600px) {
-    .banner-button {
-        width: 70%;
+    .hero-banner {
+        padding-bottom: 20px;
     }
 }
 
@@ -489,32 +512,106 @@ footer {
     .banner-title {
         font-size: 24px;
     }
-}
 
-@media (max-width: 1100px) {
     .banner-content {
         top: 15%;
     }
-}
 
-@media (max-width: 1100px) {
     .banner-paragraph {
         font-size: 13px;
     }
+
 }
 
-@media (max-width: 1100px) {
-    .hero-banner {
-        padding: 60px clamp(5px, 10vw, 160px);
+@media (max-width: 980px) {
+    .header-left {
+        margin-right: 0px;
     }
+    
+    .header-left a, .header-right a {
+        display: none;
+    }
+
+    .menu-pop {
+        display: inline-block;
+    }
+    
+    footer {
+        padding: 30px clamp(5px, 10vw, 160px);
+    }
+
+    .upper-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
 }
 
-@media (max-width: 1200px) {
-    .newsletter-content {
-        width: 70%;
-        padding: 7px 2px;
-        font-size: 12px;
+    .upper-left-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+}
+
+    .upper-left-footer img {
+        width: 50%;
+        height: auto;
     }
+
+    .gali-potensi {
+        font-size: 14px;
+    }
+
+    .footer-description {
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .upper-right-footer {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .row1-item, .row2-item, .row3-item {
+        display: none;
+    }
+
+    .row1-first-item, .row2-first-item, .row3-first-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row3-first-item img, .row2-first-item img, .row1-first-item img {
+        display: block;
+        width: 8px;
+        height: 12px;
+        align-self: center;
+    }
+
+    .middle-footer {
+        padding-top: 5px;
+    }
+
+    .lower-footer {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .collection-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -522,20 +619,37 @@ footer {
         flex-direction: column;
         gap: 5px;
     }
-}
 
-@media (max-width: 700px) {
     .subscribe-button {
         position: relative;
         width: 100%;
     }
-}
 
-@media (max-width: 700px) {
     .email-subscribe {
         font-family: DM Sans;
         font-size: 14px;
         padding: 20px;
         border-radius: 10px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    img.videobelajar-logo {
+        width: 50%;
+    }
+
+    .hero-words {
+        width: 90%;
+    }
+
+    .banner-content {
+        top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-button {
+        width: 90%;
     }
 }

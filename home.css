@@ -291,7 +291,7 @@ button {
 
 .rating {
     display: flex;
-    flex-direction: row;
+    display: row;
     gap: 10px;
 }
 
@@ -686,6 +686,34 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .lesson {
+        height: fit-content;
+    }
+
+    .lesson img {
+        height: 50%;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    .lesson-caption {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .lesson-caption h3 {
+        font-size: 16px;
+    }
+
+    .lesson-caption p {
+        display: none;
+    }
+
+    .di-gojek {
+        display: none;
     }
 
 }

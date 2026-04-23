@@ -204,6 +204,13 @@ button {
     color: rgb(65, 2, 2);
 }
 
+.flex-style2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
 .lessons-collection {
     width: 100%;
     height: fit-content;
@@ -223,7 +230,7 @@ button {
     flex-direction: column;
     gap: 16px;
     flex-grow: 1;
-    height: 426px;
+    height: fit-content;
     width: 384px;
     max-width: 500px;
     background-color: rgb(255, 255, 255);
@@ -239,7 +246,7 @@ button {
 }
 
 .lesson img {
-    height: 50%;
+    height: 194px;
     width: 100%;
     border-radius: 10px;
 }
@@ -291,7 +298,7 @@ button {
 
 .rating {
     display: flex;
-    display: row;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -647,7 +654,7 @@ footer {
     .email-subscribe {
         font-family: DM Sans;
         font-size: 14px;
-        padding: 20px;
+        padding: 15px;
         border-radius: 10px;
     }
 
@@ -685,16 +692,24 @@ footer {
     .flex-style2 {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        justify-content: space-between;
+        gap: 4px;
     }
 
     .lesson {
         height: fit-content;
+        padding: 10px 10px;
     }
 
-    .lesson img {
-        height: 50%;
-        width: 25%;
+    .flex-style1 img {
+        height: 84px;
+        width: 84px;
+        border-radius: 10px;
+    }
+
+    .lecture-author img {
+        height: 36px;
+        width: 36px;
         border-radius: 10px;
     }
 
@@ -705,7 +720,15 @@ footer {
     }
 
     .lesson-caption h3 {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .author-name {
+        font-size: 14px;
+    }
+
+    .author-title {
+        font-size: 12px;
     }
 
     .lesson-caption p {
@@ -714,6 +737,23 @@ footer {
 
     .di-gojek {
         display: none;
+    }
+
+    .score {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .rating img {
+        width: 30%;
+        height: auto;
+    }
+
+    .item .explore-yuk{
+        font-size: 14px;
     }
 
 }
